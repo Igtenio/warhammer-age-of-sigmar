@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ec09-7606-dae2-0b3d" name="Grand Alliance: Order" book="Grand Alliance: Order" revision="24" battleScribeVersion="2.00" authorName="https://gitter.im/BSData/warhammer-age-of-sigmar" authorContact="@BSData" authorUrl="https://github.com/BSData/warhammer-age-of-sigmar" gameSystemId="e51d-b1a3-75fc-dc33" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ec09-7606-dae2-0b3d" name="Grand Alliance: Order" book="Grand Alliance: Order" revision="25" battleScribeVersion="2.00" authorName="https://gitter.im/BSData/warhammer-age-of-sigmar" authorContact="@BSData" authorUrl="https://github.com/BSData/warhammer-age-of-sigmar" gameSystemId="e51d-b1a3-75fc-dc33" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -9936,7 +9936,93 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="aeb5-ae52-567b-5f8c" name="Knight-Venator" hidden="false" collective="false" categoryEntryId="(No Category)" type="unit">
-      <profiles/>
+      <profiles>
+        <profile id="8503-bf5f-8b79-3b90" name="Knight-Venator" hidden="false" profileTypeId="1960-ca8e-67ce-2014" profileTypeName="01 Unit">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Move" characteristicTypeId="8655-6213-2824-1752" value="12&quot;"/>
+            <characteristic name="Wounds" characteristicTypeId="cd0e-fea6-411f-904d" value="5"/>
+            <characteristic name="Bravery" characteristicTypeId="0c85-bf79-836b-759e" value="9"/>
+            <characteristic name="Save" characteristicTypeId="f8dd-4f2a-8543-4f36" value="3+"/>
+            <characteristic name="Keywords" characteristicTypeId="215c-9d21-4da5-990f" value="Order, Celestial, Human, Stormcast Eternal, Hero, Knight-Venator"/>
+          </characteristics>
+        </profile>
+        <profile id="bd85-1de3-4a58-2e5b" name="Realmhunter&apos;s Bow" hidden="false" profileTypeId="96df-ab28-5d72-bbb3" profileTypeName="03 Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Type" characteristicTypeId="655c-362e-a663-3e50" value="Missle"/>
+            <characteristic name="Range" characteristicTypeId="ee32-7f8e-ccd7-b7b0" value="30&quot;"/>
+            <characteristic name="Attacks" characteristicTypeId="0bd7-bded-a0e0-19a0" value="3"/>
+            <characteristic name="To Hit" characteristicTypeId="87f2-fb99-33f9-7269" value="2+"/>
+            <characteristic name="To Wound" characteristicTypeId="8842-17f1-9794-4efc" value="3+"/>
+            <characteristic name="Rend" characteristicTypeId="f578-d2a5-f0d3-b707" value="-1"/>
+            <characteristic name="Damage" characteristicTypeId="b5b6-4cbd-661d-1b70" value="1"/>
+          </characteristics>
+        </profile>
+        <profile id="3949-92c6-f6d4-1b67" name="Star-eagle&apos;s Celestial Talons" hidden="false" profileTypeId="96df-ab28-5d72-bbb3" profileTypeName="03 Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Type" characteristicTypeId="655c-362e-a663-3e50" value="Missle"/>
+            <characteristic name="Range" characteristicTypeId="ee32-7f8e-ccd7-b7b0" value="30&quot;"/>
+            <characteristic name="Attacks" characteristicTypeId="0bd7-bded-a0e0-19a0" value="3"/>
+            <characteristic name="To Hit" characteristicTypeId="87f2-fb99-33f9-7269" value="4+"/>
+            <characteristic name="To Wound" characteristicTypeId="8842-17f1-9794-4efc" value="3+"/>
+            <characteristic name="Rend" characteristicTypeId="f578-d2a5-f0d3-b707" value="-"/>
+            <characteristic name="Damage" characteristicTypeId="b5b6-4cbd-661d-1b70" value="1"/>
+          </characteristics>
+        </profile>
+        <profile id="86d1-35e3-18c7-03fe" name="Star-eagle&apos;s Celestial Talons" hidden="false" profileTypeId="96df-ab28-5d72-bbb3" profileTypeName="03 Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Type" characteristicTypeId="655c-362e-a663-3e50" value="Melee"/>
+            <characteristic name="Range" characteristicTypeId="ee32-7f8e-ccd7-b7b0" value="1&quot;"/>
+            <characteristic name="Attacks" characteristicTypeId="0bd7-bded-a0e0-19a0" value="3"/>
+            <characteristic name="To Hit" characteristicTypeId="87f2-fb99-33f9-7269" value="4+"/>
+            <characteristic name="To Wound" characteristicTypeId="8842-17f1-9794-4efc" value="3+"/>
+            <characteristic name="Rend" characteristicTypeId="f578-d2a5-f0d3-b707" value="-"/>
+            <characteristic name="Damage" characteristicTypeId="b5b6-4cbd-661d-1b70" value="1"/>
+          </characteristics>
+        </profile>
+        <profile id="386c-4c35-0322-a5b8" name="Fly" hidden="false" profileTypeId="c924-5a68-471a-2fd5" profileTypeName="08 Ability (Unit)">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Ability Details" characteristicTypeId="d4dc-8e81-bc0e-b8f0" value="A Knight-Venator can fly."/>
+          </characteristics>
+        </profile>
+        <profile id="e162-b791-6db6-8ed4" name="Celestial Talons" hidden="false" profileTypeId="c924-5a68-471a-2fd5" profileTypeName="08 Ability (Unit)">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Ability Details" characteristicTypeId="d4dc-8e81-bc0e-b8f0" value="If the wound roll for the Star-eagle&apos;s Celestial Talons is 6 or more, that attack has a Rend of -3."/>
+          </characteristics>
+        </profile>
+        <profile id="0cdd-ca23-11c4-cd95" name="Star-fated Arrow" hidden="false" profileTypeId="c924-5a68-471a-2fd5" profileTypeName="08 Ability (Unit)">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Ability Details" characteristicTypeId="d4dc-8e81-bc0e-b8f0" value="Once per battle, in your shooting phase, you can declare that this model will loose a star-fated arrow. When you do so, he makes 1 attack with his Realmhunter&apos;s Bow rather than 3, but it causes D3+3 Damage. If the target is a &lt;b&gt;Hero&lt;/b&gt; or &lt;b&gt;Monster&lt;/b&gt;, the damage is D6+3 instead."/>
+          </characteristics>
+        </profile>
+      </profiles>
       <rules/>
       <infoLinks/>
       <modifiers>
@@ -9955,12 +10041,32 @@
         </modifier>
       </modifiers>
       <constraints/>
-      <selectionEntries/>
+      <selectionEntries>
+        <selectionEntry id="5e27-1e2a-4c95-9152" name="Knight-Venator" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="120.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups/>
-      <entryLinks/>
-      <costs>
-        <cost name="pts" costTypeId="points" value="120.0"/>
-      </costs>
+      <entryLinks>
+        <entryLink id="4820-0b89-bb49-f955" name="" hidden="false" targetId="4d4d-fffb-4879-b5bf" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
+      <costs/>
     </selectionEntry>
     <selectionEntry id="9320-740f-eb76-c07b" name="Knight-Vexillor" hidden="false" collective="false" categoryEntryId="(No Category)" type="unit">
       <profiles/>
@@ -10951,6 +11057,14 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks/>
+        <entryLink id="422a-83b5-9937-be6e" name="" hidden="false" targetId="4d4d-fffb-4879-b5bf" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="220.0"/>
       </costs>
@@ -11051,8 +11165,33 @@
       </modifiers>
       <constraints/>
       <selectionEntries/>
+        <selectionEntry id="52bd-67cc-bbd0-a44e" name="Lord-Relictor" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7727-9b98-b9bb-54c0" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c456-9907-f808-72e0" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="80.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups/>
       <entryLinks/>
+        <entryLink id="d443-9af8-79c7-03a6" name="" page="" hidden="false" targetId="4d4d-fffb-4879-b5bf" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="pts" costTypeId="points" value="80.0"/>
       </costs>
@@ -11966,7 +12105,7 @@
     </selectionEntry>
     <selectionEntry id="432b-fe7d-867c-7e7d" name="Prosecutors with Celestial Hammers" hidden="false" collective="false" categoryEntryId="(No Category)" type="unit">
       <profiles>
-        <profile id="0f68-31ed-6380-8be1" name="Prosecutor with Celestial Hammers" hidden="false" profileTypeId="1960-ca8e-67ce-2014" profileTypeName="01 Unit">
+        <profile id="0f68-31ed-6380-8be1" name="Prosecutors" hidden="false" profileTypeId="1960-ca8e-67ce-2014" profileTypeName="01 Unit">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -12155,6 +12294,37 @@
             <characteristic name="Damage" characteristicTypeId="b5b6-4cbd-661d-1b70" value="1"/>
           </characteristics>
         </profile>
+        <profile id="88ea-c315-6398-7528" name="Heralds of Righteousness" hidden="false" profileTypeId="c924-5a68-471a-2fd5" profileTypeName="08 Ability (Unit)">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Ability Details" characteristicTypeId="d4dc-8e81-bc0e-b8f0" value="Roll 3 dice instead of 2 dice when determining the charge move for this unit. In addition. you can declare a charge with this unit if it is within 18&quot; of the enemy rather than 12&quot;."/>
+          </characteristics>
+        </profile>
+        <profile id="5fe6-c31b-a570-dff3" name="Cleaving Blow" hidden="false" profileTypeId="c924-5a68-471a-2fd5" profileTypeName="08 Ability (Unit)">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="432b-fe7d-867c-7e7d" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de28-dcc6-8ff0-0919" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="Ability Details" characteristicTypeId="d4dc-8e81-bc0e-b8f0" value="When a model attacks with a Grandaxe, select a target unit and make one attack against it for each model it has within range."/>
+          </characteristics>
+        </profile>
       </profiles>
       <rules/>
       <infoLinks/>
@@ -12331,7 +12501,143 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="5327-8457-06be-ca4b" name="Prosecutors with Stormcall Javelins" hidden="false" collective="false" categoryEntryId="(No Category)" type="unit">
-      <profiles/>
+      <profiles>
+        <profile id="17a3-caa4-fb0d-309a" name="Prosecutors" hidden="false" profileTypeId="1960-ca8e-67ce-2014" profileTypeName="01 Unit">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Move" characteristicTypeId="8655-6213-2824-1752" value="12&quot;"/>
+            <characteristic name="Wounds" characteristicTypeId="cd0e-fea6-411f-904d" value="2"/>
+            <characteristic name="Bravery" characteristicTypeId="0c85-bf79-836b-759e" value="6"/>
+            <characteristic name="Save" characteristicTypeId="f8dd-4f2a-8543-4f36" value="4+"/>
+            <characteristic name="Keywords" characteristicTypeId="215c-9d21-4da5-990f" value="Order, Celestial, Human, Stormcast Eternal, Angelos, Prosecutors"/>
+          </characteristics>
+        </profile>
+        <profile id="0dba-dc8e-e324-1dd3" name="Fly" hidden="false" profileTypeId="c924-5a68-471a-2fd5" profileTypeName="08 Ability (Unit)">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Ability Details" characteristicTypeId="d4dc-8e81-bc0e-b8f0" value="Prosecutors can fly."/>
+          </characteristics>
+        </profile>
+        <profile id="4139-6b29-5893-cf03" name="Prosecutor-Prime" hidden="false" profileTypeId="c924-5a68-471a-2fd5" profileTypeName="08 Ability (Unit)">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Ability Details" characteristicTypeId="d4dc-8e81-bc0e-b8f0" value="The leader of this unit is the Prosecutor-Prime. Raining death from afar, he makes 2 attacks rather than 1 in the shooting phase."/>
+          </characteristics>
+        </profile>
+        <profile id="0185-611b-4918-a156" name="Stormcall Javelin" hidden="false" profileTypeId="96df-ab28-5d72-bbb3" profileTypeName="03 Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Type" characteristicTypeId="655c-362e-a663-3e50" value="Missle"/>
+            <characteristic name="Range" characteristicTypeId="ee32-7f8e-ccd7-b7b0" value="18&quot;"/>
+            <characteristic name="Attacks" characteristicTypeId="0bd7-bded-a0e0-19a0" value="1"/>
+            <characteristic name="To Hit" characteristicTypeId="87f2-fb99-33f9-7269" value="3+"/>
+            <characteristic name="To Wound" characteristicTypeId="8842-17f1-9794-4efc" value="3+"/>
+            <characteristic name="Rend" characteristicTypeId="f578-d2a5-f0d3-b707" value="-"/>
+            <characteristic name="Damage" characteristicTypeId="b5b6-4cbd-661d-1b70" value="1"/>
+          </characteristics>
+        </profile>
+        <profile id="56d1-2447-dfce-e755" name="Stormcall Javelin" hidden="false" profileTypeId="96df-ab28-5d72-bbb3" profileTypeName="03 Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Type" characteristicTypeId="655c-362e-a663-3e50" value="Melee"/>
+            <characteristic name="Range" characteristicTypeId="ee32-7f8e-ccd7-b7b0" value="2&quot;"/>
+            <characteristic name="Attacks" characteristicTypeId="0bd7-bded-a0e0-19a0" value="1"/>
+            <characteristic name="To Hit" characteristicTypeId="87f2-fb99-33f9-7269" value="4+"/>
+            <characteristic name="To Wound" characteristicTypeId="8842-17f1-9794-4efc" value="4+"/>
+            <characteristic name="Rend" characteristicTypeId="f578-d2a5-f0d3-b707" value="-"/>
+            <characteristic name="Damage" characteristicTypeId="b5b6-4cbd-661d-1b70" value="1"/>
+          </characteristics>
+        </profile>
+        <profile id="f752-25da-8232-b8ab" name="Sigmarite Shields" hidden="false" profileTypeId="c924-5a68-471a-2fd5">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Ability Details" characteristicTypeId="d4dc-8e81-bc0e-b8f0" value="You can re-roll save rolls of 1 for this unit if any models from the unit are carrying Sigmarite Shields."/>
+          </characteristics>
+        </profile>
+        <profile id="c8a2-3e5d-0524-88da" name="Heralds of Righteousness" hidden="false" profileTypeId="c924-5a68-471a-2fd5" profileTypeName="08 Ability (Unit)">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="Ability Details" characteristicTypeId="d4dc-8e81-bc0e-b8f0" value="Roll 3 dice instead of 2 dice when determining the charge move for this unit. In addition. you can declare a charge with this unit if it is within 18&quot; of the enemy rather than 12&quot;."/>
+          </characteristics>
+        </profile>
+        <profile id="53f3-1638-361a-bd46" name="Stormsurge Trident" hidden="false" profileTypeId="96df-ab28-5d72-bbb3" profileTypeName="03 Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="5327-8457-06be-ca4b" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9d01-76d7-c112-4ef7" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="Type" characteristicTypeId="655c-362e-a663-3e50" value="Missle"/>
+            <characteristic name="Range" characteristicTypeId="ee32-7f8e-ccd7-b7b0" value="18&quot;"/>
+            <characteristic name="Attacks" characteristicTypeId="0bd7-bded-a0e0-19a0" value="1"/>
+            <characteristic name="To Hit" characteristicTypeId="87f2-fb99-33f9-7269" value="3+"/>
+            <characteristic name="To Wound" characteristicTypeId="8842-17f1-9794-4efc" value="3+"/>
+            <characteristic name="Rend" characteristicTypeId="f578-d2a5-f0d3-b707" value="-1"/>
+            <characteristic name="Damage" characteristicTypeId="b5b6-4cbd-661d-1b70" value="2"/>
+          </characteristics>
+        </profile>
+        <profile id="384c-b03c-e696-442b" name="Stormsurge Trident" hidden="false" profileTypeId="96df-ab28-5d72-bbb3" profileTypeName="03 Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="5327-8457-06be-ca4b" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9d01-76d7-c112-4ef7" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="Type" characteristicTypeId="655c-362e-a663-3e50" value="Melee"/>
+            <characteristic name="Range" characteristicTypeId="ee32-7f8e-ccd7-b7b0" value="2&quot;"/>
+            <characteristic name="Attacks" characteristicTypeId="0bd7-bded-a0e0-19a0" value="1"/>
+            <characteristic name="To Hit" characteristicTypeId="87f2-fb99-33f9-7269" value="4+"/>
+            <characteristic name="To Wound" characteristicTypeId="8842-17f1-9794-4efc" value="4+"/>
+            <characteristic name="Rend" characteristicTypeId="f578-d2a5-f0d3-b707" value="-1"/>
+            <characteristic name="Damage" characteristicTypeId="b5b6-4cbd-661d-1b70" value="2"/>
+          </characteristics>
+        </profile>
+      </profiles>
       <rules/>
       <infoLinks/>
       <modifiers>
@@ -12372,7 +12678,7 @@
       </modifiers>
       <constraints/>
       <selectionEntries>
-        <selectionEntry id="ae26-8bb8-69d8-baa8" name="Prosecutors" hidden="false" collective="false" categoryEntryId="(No Category)" type="model">
+        <selectionEntry id="ae26-8bb8-69d8-baa8" name="Prosecutors" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -12389,7 +12695,44 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <selectionEntryGroups/>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="e734-db9b-fa6d-b398" name="Grand Weapons" hidden="false" collective="true">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="increment" field="7ee4-d8ad-d15d-86a3" value="1">
+              <repeats>
+                <repeat field="selections" scope="5327-8457-06be-ca4b" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ae26-8bb8-69d8-baa8" repeats="1"/>
+              </repeats>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7ee4-d8ad-d15d-86a3" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="9d01-76d7-c112-4ef7" name="Stormsurge Trident" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="9d01-76d7-c112-4ef7" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8015-36d9-bf64-d9de" type="max"/>
+              </constraints>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="pts" costTypeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups/>
+          <entryLinks/>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="80.0"/>
@@ -16005,6 +16348,23 @@
       <entryLinks/>
       <costs>
         <cost name="pts" costTypeId="points" value="140.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4d4d-fffb-4879-b5bf" name="Warlord" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6864-0940-03bd-cf66" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4a42-0a49-0fe9-c9a5" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b9cc-dcf0-c0f8-a0f8" type="max"/>
+      </constraints>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
