@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ec09-7606-dae2-0b3d" name="Grand Alliance: Order" book="Grand Alliance: Order" revision="25" battleScribeVersion="2.00" authorName="https://gitter.im/BSData/warhammer-age-of-sigmar" authorContact="@BSData" authorUrl="https://github.com/BSData/warhammer-age-of-sigmar" gameSystemId="e51d-b1a3-75fc-dc33" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ec09-7606-dae2-0b3d" name="Grand Alliance: Order" book="Grand Alliance: Order" revision="23" battleScribeVersion="2.00" authorName="https://gitter.im/BSData/warhammer-age-of-sigmar" authorContact="@BSData" authorUrl="https://github.com/BSData/warhammer-age-of-sigmar" gameSystemId="e51d-b1a3-75fc-dc33" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -2268,20 +2268,6 @@
       <constraints/>
     </entryLink>
     <entryLink id="2ad8-9805-f65b-77f2" name="" hidden="false" targetId="5168-edf5-46ca-dced" type="selectionEntry" categoryEntryId="6c6b-e787-f9b8-a510">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <constraints/>
-    </entryLink>
-    <entryLink id="1f8f-74ba-c6d8-677c" name="" hidden="false" targetId="3afd-cd3d-48d8-9916" type="selectionEntry" categoryEntryId="065e-fda7-fd27-1f40">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <constraints/>
-    </entryLink>
-    <entryLink id="37e9-1245-5e25-dcf7" name="" hidden="false" targetId="beb1-a947-4987-7f1f" type="selectionEntry" categoryEntryId="065e-fda7-fd27-1f40">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -9852,7 +9838,7 @@
         <cost name="pts" costTypeId="points" value="120.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3c95-3545-4b34-4221" name="Knight-Questor" hidden="false" collective="false" categoryEntryId="(No Category)" type="upgrade">
+    <selectionEntry id="3c95-3545-4b34-4221" name="Knight-Questor" hidden="false" collective="false" categoryEntryId="(No Category)" type="unit">
       <profiles>
         <profile id="e008-aee7-b3df-88b1" name="Knight-Questor" hidden="false" profileTypeId="1960-ca8e-67ce-2014" profileTypeName="01 Unit">
           <profiles/>
@@ -9928,11 +9914,36 @@
         </modifier>
       </modifiers>
       <constraints/>
-      <selectionEntries/>
+      <selectionEntries>
+        <selectionEntry id="d6ad-ebc4-3f19-f939" name="Knight-Questor" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7ed4-95c2-072e-4f39" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4b25-5efe-fded-7cb0" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="100.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups/>
-      <entryLinks/>
+      <entryLinks>
+        <entryLink id="e218-91e9-3bc9-7a5a" name="" hidden="false" targetId="4d4d-fffb-4879-b5bf" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </entryLink>
+      </entryLinks>
       <costs>
-        <cost name="pts" costTypeId="points" value="100.0"/>
+        <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="aeb5-ae52-567b-5f8c" name="Knight-Venator" hidden="false" collective="false" categoryEntryId="(No Category)" type="unit">
@@ -10762,7 +10773,20 @@
           <profiles/>
           <rules/>
           <infoLinks/>
-          <modifiers/>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions/>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="5232-9953-1b83-0097" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="422a-83b5-9937-be6e" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups/>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="Command Trait Details" characteristicTypeId="ee96-6f3a-e5ca-2350" value="If a Lord-Celestant uses this ability, until your next hero phase you do not have to take battleshock tests for this model or any friendly &lt;b&gt;Stormcast Eternals&lt;/b&gt; that are within 24&quot; of this model at the start of the battleshock phase."/>
           </characteristics>
@@ -10979,7 +11003,24 @@
         </modifier>
       </modifiers>
       <constraints/>
-      <selectionEntries/>
+      <selectionEntries>
+        <selectionEntry id="343b-91a5-7552-ad5b" name="Lord-Celestant on Dracoth" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4eca-019e-9f1c-82d7" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cf0d-983c-b8ee-56ef" type="max"/>
+          </constraints>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="pts" costTypeId="points" value="220.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="3bec-64d3-bade-af15" name="Weapons" hidden="false" collective="false">
           <profiles/>
@@ -11056,7 +11097,7 @@
           <entryLinks/>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks/>
+      <entryLinks>
         <entryLink id="422a-83b5-9937-be6e" name="" hidden="false" targetId="4d4d-fffb-4879-b5bf" type="selectionEntry">
           <profiles/>
           <rules/>
@@ -11066,7 +11107,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" costTypeId="points" value="220.0"/>
+        <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="19ca-60d5-c3b7-9444" name="Lord-Celestant on Stardrake" hidden="false" collective="false" categoryEntryId="(No Category)" type="unit">
@@ -11164,7 +11205,7 @@
         </modifier>
       </modifiers>
       <constraints/>
-      <selectionEntries/>
+      <selectionEntries>
         <selectionEntry id="52bd-67cc-bbd0-a44e" name="Lord-Relictor" hidden="false" collective="false" type="upgrade">
           <profiles/>
           <rules/>
@@ -11183,7 +11224,7 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
-      <entryLinks/>
+      <entryLinks>
         <entryLink id="d443-9af8-79c7-03a6" name="" page="" hidden="false" targetId="4d4d-fffb-4879-b5bf" type="selectionEntry">
           <profiles/>
           <rules/>
@@ -11193,7 +11234,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" costTypeId="points" value="80.0"/>
+        <cost name="pts" costTypeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7132-5dde-398e-d8a0" name="Lord-Veritant" hidden="false" collective="false" categoryEntryId="(No Category)" type="unit">
@@ -13792,21 +13833,7 @@
       <profiles/>
       <rules/>
       <infoLinks/>
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <repeats/>
-          <conditions/>
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d51d-dec8-f7a7-351d" type="equalTo"/>
-                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2769-f63b-fc02-fd64" type="equalTo"/>
-              </conditions>
-              <conditionGroups/>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
+      <modifiers/>
       <constraints/>
       <selectionEntries>
         <selectionEntry id="7bbd-058a-03ea-1b6e" name="3 Skink Handelers" hidden="false" collective="false" categoryEntryId="(No Category)" type="model">
